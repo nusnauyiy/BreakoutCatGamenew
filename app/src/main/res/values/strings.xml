@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CatGame</string>
+
+    <string name="breed">Breed</string>
+    <string name="history">History</string>
+    <string name="famousCats">Famous Cats</string>
+    <string name="funFacts">Fun Facts</string>
+    <string name="random">Random</string>
+
+    <string name="welcome">Welcome to Trivia Cat!</string>
+    <string name="choose">Choose a Category</string>
+    <string name="gameName">Trivia Cat</string>
+
+    <string name="guessLetter">GUESS LETTER</string>
+    <string name="guessFinal">GUESS FINAL PHRASE</string>
+</resources>

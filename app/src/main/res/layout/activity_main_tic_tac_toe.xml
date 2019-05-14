@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.catgame.MainActivityTicTacToe"
+    android:background="@color/lightblue">
+
+    <RelativeLayout
+
+        android:id="@+id/popaplayout"
+        android:layout_width="372dp"
+        android:layout_height="586dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="268dp"
+            android:layout_height="243dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="board"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.38"
+            android:layout_marginBottom="275dp"
+            app:srcCompat="@drawable/board" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="88dp"
+            android:layout_height="81dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="button8"
+            android:onClick="Move"
+
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:color/background_light" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="88dp"
+            android:layout_height="81dp"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginEnd="4dp"
+
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="button9"
+            android:onClick="Move"
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:color/background_light" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="88dp"
+            android:layout_height="81dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toStartOf="@+id/imageButton2"
+            android:contentDescription="button7"
+            android:onClick="Move"
+
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:color/background_light"
+            android:layout_toLeftOf="@+id/imageButton2" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="88dp"
+            android:layout_height="81dp"
+            android:layout_above="@+id/imageButton8"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:contentDescription="button6"
+            android:onClick="Move"
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:color/background_light" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="88dp"
+            android:layout_height="81dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:contentDescription="button5"
+            android:onClick="Move"
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:color/background_light" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="88dp"
+            android:layout_height="81dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imageButton8"
+            android:contentDescription="button4"
+            android:onClick="Move"
+
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:color/background_light"
+            android:layout_toLeftOf="@+id/imageButton8" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="88dp"
+            android:layout_height="81dp"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_marginStart="-2dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="0dp"
+
+            android:layout_toEndOf="@+id/imageButton2"
+            android:layout_toRightOf="@+id/imageButton2"
+            android:contentDescription="button3"
+            android:onClick="Move"
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:color/background_light" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="88dp"
+            android:layout_height="81dp"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="button2"
+            android:onClick="Move"
+
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:color/background_light" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="88dp"
+            android:layout_height="81dp"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toStartOf="@+id/imageButton8"
+            android:contentDescription="button1"
+            android:onClick="Move"
+
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:color/background_light"
+            android:layout_toLeftOf="@+id/imageButton8" />
+
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:onClick="restartGame"
+            android:textColor="@color/colorAccent"
+            android:text="Reset Game" />
+
+        <TextView
+            android:id="@+id/gameMessage"
+            android:layout_width="142dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="119dp"
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginEnd="108dp"
+            android:layout_marginRight="108dp"
+            android:layout_marginBottom="100dp"
+            android:text=" "
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
